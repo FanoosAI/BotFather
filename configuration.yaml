@@ -1,0 +1,40 @@
+welcome-message: False
+
+connectors:
+  matrix:
+    # Required
+    mxid: "@bot_father:parsi.ai"
+    password: "Father0fBot$"
+    homeserver: "https://parsi.ai"
+    rooms:
+      'main': '#botfather_room:parsi.ai'
+    nick: "Bot Step Father"
+    device_id: "OPSDroidBotStepFather"
+    enable_encryption: True
+
+databases:
+  mongo:
+    host: localhost
+    port: 27017
+    database: botfather
+    user: botfather
+    password: botfather
+    collection: "botRequests"
+    admin_collection: "admin"
+
+
+skills:
+  greet:
+    path: skills/greet.py
+  register_bots:
+    path: skills/register_bots.py
+  accept_dm:
+    admin_username: "@ssaaeee:parsi.ai"
+    path: skills/accept_direct_message.py
+
+
+logging:
+  level: info
+  path: ~/.opsdroid/output.log
+  console: true
+  extended: true

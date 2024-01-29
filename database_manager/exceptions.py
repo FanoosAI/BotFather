@@ -1,0 +1,2 @@
+class RepeatedEntryException(Exception):
+    pass

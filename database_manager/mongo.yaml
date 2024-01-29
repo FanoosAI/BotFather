@@ -1,0 +1,7 @@
+host: mongodb
+port: 27017
+database: "botFather"
+collection: "botRequests"
+admin_collection: "admin"
+username: "botfather"
+password: "botfather"

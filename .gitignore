@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+venv
+Pipfile
+Pipfile.lock
+*/__pycache__
+__pycache__
+test.py
+api_key.yaml
+database/mongo_local.yaml
